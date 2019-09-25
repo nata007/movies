@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+            <RelativeLayout
+                    android:id="@+id/lineRelative"
+                    android:layout_width="14dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="match_parent"
+                    >
+
+            </RelativeLayout>
+            <TextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/movieTitle"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="left"
+                    android:text="Boys, Les"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_below="@+id/movieTitle"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/movieSubTitle"
+                    android:textSize="17dp"
+                    android:gravity="left"
+                    android:text="Otter, brazilian"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_below="@+id/movieSubTitle"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/movieYear"
+                    android:textSize="12dp"
+                    android:gravity="right"
+                    android:text="1900"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_below="@+id/movieYear"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/moviewDescription"
+                    android:textSize="16dp"
+                    android:maxLines="1"
+                    android:gravity="left"
+                    android:text="Hoary Blackfoot"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
